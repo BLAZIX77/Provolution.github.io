@@ -16,7 +16,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: radial-gradient(circle at center, #ff8a00, #5a1f00, #1a0b00);
+
+            /* FOND : centre orange + bords bleutés */
+            background: radial-gradient(circle at center,
+                #ff8a00 0%,
+                #ff6a00 20%,
+                #1f3a70 70%,
+                #0a1a33 100%
+            );
+
             font-family: 'Segoe UI', sans-serif;
             overflow: hidden;
         }
@@ -24,18 +32,21 @@
         .title {
             font-size: 4rem;
             font-weight: 900;
-            color: #ffcf99;
+            color: #ffdcb3;
             text-align: center;
 
-            /* Effet 3D avec superposition d'ombres */
+            /* EFFET 3D + glow */
             text-shadow:
                 1px 1px 0px #c25c00,
                 2px 2px 0px #a34d00,
                 3px 3px 0px #823e00,
                 4px 4px 0px #662f00,
                 6px 6px 8px rgba(0,0,0,0.6),
-                0 0 20px rgba(255,120,0,0.7);
 
+                /* GLOW ORANGE + BLEU */
+                0 0 20px rgba(255,120,0,0.8),
+                0 0 40px rgba(0,110,255,0.4);
+            
             animation: float 3s ease-in-out infinite;
         }
 
