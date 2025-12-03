@@ -2,33 +2,91 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Provolution – Suivi d’évolution & Habitudes</title>
-    <meta name="description" content="Provolution : Suivez vos habitudes, votre évolution et vos objectifs facilement. Projet d'application gratuite.">
+    <title>Provolution – Habit Tracker & Évolution</title>
+    <meta name="description" content="Provolution : suivez vos habitudes, votre évolution et vos objectifs grâce à un tableau de bord futuriste.">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background: #0e0e0e;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
             color: white;
-            text-align: center;
-            padding: 100px 20px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
         }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.2rem;
+
+        .container {
+            width: 90%;
             max-width: 700px;
-            margin: auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.5);
+            text-align: center;
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #8affff, #00d4ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 1.15rem;
+            opacity: 0.85;
             line-height: 1.6;
-            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #00d4ff;
+            padding: 14px 30px;
+            border-radius: 30px;
+            color: black;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            transition: 0.25s;
+        }
+
+        .btn:hover {
+            background: #8affff;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 <body>
-    <h1>Provolution</h1>
-    <p>Bienvenue sur la première version officielle du projet Provolution.<br>
-    L’objectif : créer un habit tracker + planificateur + dashboard d’évolution, 100% gratuit.<br><br>
-    Cette page est la base du futur site, qui servira à afficher le projet et tester l'application web.</p>
+
+    <div class="container">
+        <h1>PROVOLUTION</h1>
+        <p>
+            Bienvenue sur Provolution, la plateforme futuriste de suivi d'habitudes, 
+            d'évolution personnelle et de planification avancée.  
+            <br><br>
+            Ceci est la première version officielle.  
+            Le dashboard, les graphiques et le suivi quotidien arrivent bientôt.
+        </p>
+
+        <a href="#" class="btn">Commencer</a>
+    </div>
+
 </body>
 </html>
